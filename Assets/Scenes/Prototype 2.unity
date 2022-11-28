@@ -218,27 +218,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50.000004, y: -60.000004, z: 0}
---- !u!1 &385800488 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 160438, guid: 7b6675de545141649953fd8adec4561b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1672567027}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &385800490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385800488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7c1e1eab16d6a54d806cec3b6b36019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  projectilePrefab: {fileID: 0}
-  xRange: 15
 --- !u!1 &425805626
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,10 +486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c1e1eab16d6a54d806cec3b6b36019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
   projectilePrefab: {fileID: 5608891687568864153, guid: cd92713fbffd81e4ea769a739180b2b5,
     type: 3}
-  xRange: 15
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +555,6 @@ MonoBehaviour:
   - {fileID: 5016242312573888021, guid: 8eb6484156a702a4688ef1943ab7283c, type: 3}
   - {fileID: 3904798747749468349, guid: 386dde9979bc4404995f202f61b563af, type: 3}
   - {fileID: 277936539270012973, guid: 78437b4af3b944848926e29e2e2b33bf, type: 3}
-  animalIndex: 0
 --- !u!4 &1130724058
 Transform:
   m_ObjectHideFlags: 0

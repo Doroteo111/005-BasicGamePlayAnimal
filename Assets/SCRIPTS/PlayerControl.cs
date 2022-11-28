@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-     
-    public float speed = 10f;
+    private float xRange = 15f; //limite pantalla
+    private float speed = 10f;
     private float horizontalInput;
 
     public GameObject projectilePrefab;
 
-    public float xRange = 15f;
-
+    
     private void Update()
     {
+        //movimiwnto horizontal player
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * speed * Time.deltaTime*horizontalInput);
-        PlayerInBounds();
+        
+        PlayerInBounds(); //mantiene al player en la pantalla
 
+        //mecanicas del disparo
         if (Input.GetKeyDown(KeyCode.Space))
         {
             FireProjectile();

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    public float upperLimit = 20f;
-    public float lowerLimit = -10f;
+    private float upperLimit = 20f;
+    private float lowerLimit = -10f;
 
     private void Update()
     {
@@ -13,6 +13,8 @@ public class DestroyOutOfBounds : MonoBehaviour
         if(transform.position.z < lowerLimit)
         {
             Destroy(gameObject);
+            Debug.Log("GAME OVER");
+            Time.timeScale = 0;
         }
 
         //LIMITE SUPERIOR-> BALA FALLIDA
